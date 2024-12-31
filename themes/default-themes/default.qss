@@ -41,7 +41,7 @@ QTabBar {
 }
 
 QTabBar::close-button {
-    background-image: url({RESOURCE_PATH}/close-dark.png); /* Use a darker close icon */
+    background-image: url({RESOURCE_PATH}/icons/close-dark.png); /* Use a darker close icon */
 }
 
 QTabBar::tab {

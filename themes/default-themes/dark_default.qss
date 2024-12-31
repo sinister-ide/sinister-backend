@@ -479,6 +479,60 @@ QComboBox#terminalTypeDropdown QAbstractItemView {
     selection-color: #FFFFFF;
 }
 
+/* Check Updates */
+#updatesDialog {
+    background-color: #1E1E1E;
+    color: #E0E0E0;
+    border: 1px solid #333333;
+    border-radius: 8px;
+}
+
+#updatesTitleLabel {
+    font-size: 24px;
+    font-weight: bold;
+    color: #E0E0E0;
+    text-align: center;
+}
+
+#currentVersionLabel, #latestVersionLabel {
+    color: #E0E0E0;
+    text-align: center;
+    font-size: 16px;
+}
+
+#copyrightLabel {
+    color: #E0E0E0;
+    text-align: center;
+    font-size: 14px;
+}
+
+#updateButton {
+    background-color: #2A2A2A;
+    color: #E0E0E0;
+    border: 1px solid #4A4A4A;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+#updateButton:enabled {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+#updateButton:disabled {
+    background-color: gray;
+    color: #A0A0A0;
+}
+
+#updateButton:hover {
+    background-color: #3A3A3A;
+}
+
+#updateButton:pressed {
+    background-color: #444444;
+}
+
 /* Menu Bar */
 QMenuBar {
     background-color: #1E1E1E;

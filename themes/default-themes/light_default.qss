@@ -485,6 +485,60 @@ QComboBox#terminalTypeDropdown QAbstractItemView {
     selection-color: #000000;
 }
 
+/* Check Updates */
+#updatesDialog {
+    background-color: #FFFFFF; /* Matches the light dialog background */
+    color: #2C2C2C; /* Dark text for readability */
+    border: 1px solid #CFCFCF; /* Light border */
+    border-radius: 8px; /* Consistent radius */
+}
+
+#updatesTitleLabel {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2C2C2C; /* Dark text */
+    text-align: center;
+}
+
+#currentVersionLabel, #latestVersionLabel {
+    color: #333333; /* Slightly darker for visibility */
+    text-align: center;
+    font-size: 16px;
+}
+
+#copyrightLabel {
+    color: #666666; /* Subdued color for less visual weight */
+    text-align: center;
+    font-size: 14px;
+}
+
+#updateButton {
+    background-color: #E0E0E0; /* Light button color */
+    color: #333333; /* Dark text for readability */
+    border: 1px solid #B0B0B0; /* Subtle border */
+    border-radius: 6px; /* Matches overall design */
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+#updateButton:enabled {
+    background-color: #D6D6D6; /* Slightly darker to indicate active state */
+    color: #000000; /* Darker text */
+}
+
+#updateButton:disabled {
+    background-color: #F5F5F5; /* Very light gray */
+    color: #A0A0A0; /* Muted text color */
+}
+
+#updateButton:hover {
+    background-color: #CCCCCC; /* Highlight on hover */
+}
+
+#updateButton:pressed {
+    background-color: #BFBFBF; /* Slightly darker for pressed state */
+}
+
 /* Menu Bar */
 QMenuBar {
     background-color: #F7F7F7;

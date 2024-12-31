@@ -496,6 +496,70 @@ QComboBox#terminalTypeDropdown QAbstractItemView {
     selection-color: #FFFFFF;
 }
 
+/* Check Updates */
+#updatesDialog {
+    background-color: #2C2C2C;
+    color: #E6E6E6;
+    border: 1px solid #4A4A4A;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+#updatesTitleLabel {
+    font-size: 24px;
+    font-weight: bold;
+    color: #E6E6E6;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+#currentVersionLabel, #latestVersionLabel {
+    color: #E6E6E6;
+    text-align: center;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+#copyrightLabel {
+    color: #A0A0A0;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+#updateButton {
+    background-color: #3A3A3A;
+    color: #E6E6E6;
+    border: 1px solid #4A4A4A;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+#updateButton:enabled {
+    background-color: #505050;
+    color: #FFFFFF;
+    border-color: #707070;
+}
+
+#updateButton:disabled {
+    background-color: #2E2E2E;
+    color: #A0A0A0;
+    border-color: #4A4A4A;
+    cursor: not-allowed;
+}
+
+#updateButton:hover:enabled {
+    background-color: #606060;
+}
+
+#updateButton:pressed:enabled {
+    background-color: #707070;
+    border-color: #909090;
+}
+
 /* Menu Bar */
 QMenuBar {
     background-color: #2C2C2C;

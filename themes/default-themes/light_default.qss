@@ -539,6 +539,63 @@ QComboBox#terminalTypeDropdown QAbstractItemView {
     background-color: #BFBFBF; /* Slightly darker for pressed state */
 }
 
+/* LineNumberEditor (Custom Widget) */
+LineNumberEditor {
+    background-color: #FFFFFF;                   /* Editor background color */
+    color: #333333;                              /* Default text color */
+    border: 1px solid #D1D1D1;                   /* Editor border */
+    border-radius: 8px;                          /* Consistent radius */
+    selection-background-color: #D0E8FF;         /* Selection highlight color */
+    selection-color: #000000;                    /* Text color in selection */
+}
+
+/* LineNumberArea (Custom Area for Line Numbers) */
+LineNumberEditor > QWidget#lineNumberArea {
+    background-color: #F7F7F7;                   /* Line number background */
+    color: #666666;                              /* Line number text color */
+    border-right: 1px solid #D1D1D1;             /* Divider between line numbers and editor */
+    border-radius: 8px;                          /* Consistent rounding */
+}
+
+/* Highlight current line */
+LineNumberEditor {
+    selection-background-color: #E8F4FF;         /* Line highlight color */
+}
+
+/* Vertical ScrollBar */
+LineNumberEditor QScrollBar:vertical {
+    background: #F0F0F0;
+    width: 4px;
+    margin: 8px 0px 8px 0px;
+    border: none;
+    border-radius: 2px;
+}
+
+LineNumberEditor QScrollBar:vertical:hover {
+    width: 12px;
+    background: #E0E0E0;
+}
+
+LineNumberEditor QScrollBar::handle:vertical {
+    background: #CCCCCC;
+    min-height: 20px;
+    border-radius: 6px;
+}
+
+LineNumberEditor QScrollBar::handle:vertical:hover {
+    background: #B0B0B0;
+}
+
+LineNumberEditor QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background: none;
+    height: 0px;
+    width: 0px;
+}
+
+LineNumberEditor QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+}
+
 /* Menu Bar */
 QMenuBar {
     background-color: #F7F7F7;

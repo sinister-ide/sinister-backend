@@ -557,11 +557,6 @@ LineNumberEditor > QWidget#lineNumberArea {
     border-radius: 8px;                          /* Consistent rounding */
 }
 
-/* Highlight current line */
-LineNumberEditor {
-    selection-background-color: #E8F4FF;         /* Line highlight color */
-}
-
 /* Vertical ScrollBar */
 LineNumberEditor QScrollBar:vertical {
     background: #F0F0F0;

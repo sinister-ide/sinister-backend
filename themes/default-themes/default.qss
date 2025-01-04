@@ -496,6 +496,53 @@ QComboBox#terminalTypeDropdown QAbstractItemView {
     selection-color: #FFFFFF;
 }
 
+/* Dropdown */
+QComboBox#lineFormatDropdown {
+    background-color: #3A3A3A;
+    color: #E6E6E6;
+    border: 1px solid #4A4A4A;
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-size: 14px;
+}
+
+QComboBox#lineFormatDropdown:hover {
+    border: 1px solid #5A5A5A;
+}
+
+QComboBox#lineFormatDropdown::down-arrow {
+    image: url({RESOURCE_PATH}/icons/arrow_dark.png);
+    width: 10px;
+    height: 10px;
+}
+
+QComboBox#lineFormatDropdown::down-arrow:hover {
+    image: url({RESOURCE_PATH}/icons/arrow_dark.png);
+}
+
+QComboBox#lineFormatDropdown::down-arrow:pressed {
+    image: url({RESOURCE_PATH}/icons/arrow_dark.png);
+}
+
+QComboBox#lineFormatDropdown::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #4A4A4A;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #3C3C3C;
+}
+
+QComboBox#lineFormatDropdown QAbstractItemView {
+    background-color: #2C2C2C;
+    color: #E6E6E6;
+    border: 1px solid #3C3C3C;
+    border-radius: 8px;
+    selection-background-color: #505050;
+    selection-color: #FFFFFF;
+}
+
 /* Check Updates */
 #updatesDialog {
     background-color: #2C2C2C;
@@ -578,6 +625,11 @@ LineNumberEditor > QWidget#lineNumberArea {
     color: #888888;                              /* Line number text color */
     border-right: 1px solid #3C3C3C;             /* Divider between line numbers and editor */
     border-radius: 8px;                          /* Make line number area rounded */
+}
+
+/* Highlight current line */
+LineNumberEditor {
+    selection-background-color: #3A3A3A;         /* Line highlight color */
 }
 
 /* Vertical ScrollBar */

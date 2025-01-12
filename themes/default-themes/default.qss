@@ -350,43 +350,17 @@ QMessageBox QPushButton:pressed {
 }
 
 /* Terminal Output */
-#terminalOutput {
-    background-color: #2E2E2E;
-    color: #E0E0E0;
-    border: 1px solid #4A4A4A;
-    border-radius: 8px;
-    padding: 8px;
-    margin-left: 8px;
-    margin-right: 8px;
+/* Theme options: "BlackOnRandomLight", "Ubuntu", "Solarized", "SolarizedLight", "Linux", "BlackOnWhite", "BlackOnLightYellow", "Falcon", "DarkPastels", "GreenOnBlack", "Tango", "WhiteOnBlack", "BreezeModified" */
+terminalOutput {
+    terminalDarkTheme: "WhiteOnBlack";
 }
-/* ScrollBar for Terminal Output */
-#terminalOutput QScrollBar:vertical {
-    background: #2C2C2C;
-    width: 4px;
-    border: none;
-    border-radius: 2px;
-}
-#terminalOutput QScrollBar:vertical:hover {
-    width: 12px;
-    background: #3C3C3C;
-}
-#terminalOutput QScrollBar::handle:vertical {
-    background: #505050;
-    min-height: 20px;
-    border-radius: 6px;
-}
-#terminalOutput QScrollBar::handle:vertical:hover {
-    background: #707070;
-}
-#terminalOutput QScrollBar::add-line:vertical,
-#terminalOutput QScrollBar::sub-line:vertical {
-    background: none;
-    height: 0px;
-    width: 0px;
-}
-#terminalOutput QScrollBar::add-page:vertical,
-#terminalOutput QScrollBar::sub-page:vertical {
-    background: none;
+
+#terminalFrame{
+    border: 1px solid #3C3C3C;
+    border-radius: 10px;
+    background-color: #1E1E1E;
+    margin-left: 7px;
+    margin-right: 7px;
 }
 
 #searchButton {
@@ -606,8 +580,6 @@ QComboBox#lineFormatDropdown QAbstractItemView {
     background-color: #707070;
     border-color: #909090;
 }
-
-/* Theme: Dark */
 
 /* LineNumberEditor (Custom Widget) */
 LineNumberEditor {

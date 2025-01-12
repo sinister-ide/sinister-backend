@@ -357,43 +357,15 @@ QMessageBox QPushButton:pressed {
 }
 
 /* Terminal Output */
-#terminalOutput {
-    background-color: #FFFFFF;
-    color: #333333;
-    border: 1px solid #D1D1D1;
-    border-radius: 8px;
-    padding: 8px;
-    margin-left: 8px;
-    margin-right: 8px;
+/* Theme options: "BlackOnRandomLight", "Ubuntu", "Solarized", "SolarizedLight", "Linux", "BlackOnWhite", "BlackOnLightYellow", "Falcon", "DarkPastels", "GreenOnBlack", "Tango", "WhiteOnBlack", "BreezeModified" */
+terminalOutput {
+    terminalLightTheme: "BlackOnWhite";
 }
-/* ScrollBar for Terminal Output */
-#terminalOutput QScrollBar:vertical {
-    background: #F0F0F0;
-    width: 4px;
-    border: none;
-    border-radius: 2px;
-}
-#terminalOutput QScrollBar:vertical:hover {
-    width: 12px;
-    background: #E0E0E0;
-}
-#terminalOutput QScrollBar::handle:vertical {
-    background: #CCCCCC;
-    min-height: 20px;
-    border-radius: 6px;
-}
-#terminalOutput QScrollBar::handle:vertical:hover {
-    background: #B0B0B0;
-}
-#terminalOutput QScrollBar::add-line:vertical,
-#terminalOutput QScrollBar::sub-line:vertical {
-    background: none;
-    height: 0px;
-    width: 0px;
-}
-#terminalOutput QScrollBar::add-page:vertical,
-#terminalOutput QScrollBar::sub-page:vertical {
-    background: none;
+
+#terminalFrame{
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
 }
 
 #searchButton {
